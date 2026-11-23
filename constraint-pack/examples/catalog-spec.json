@@ -1,0 +1,68 @@
+{
+  "goal": "查找场馆并查看可预约时段",
+  "assumptions": [
+    "仅在本地统计文本，不上传内容",
+    "本示例只证明设计结构，不代表已接入模型或通过真实渲染验收"
+  ],
+  "unresolved": [],
+  "pages": [
+    {
+      "id": "pages/venues/index",
+      "pattern": "catalog",
+      "variant": "列表选择",
+      "reason": "名称、距离与可用状态比图片更重要，采用图文比较列表。",
+      "regions": [
+        {
+          "id": "search",
+          "purpose": "检索场馆名称",
+          "position": "flow",
+          "components": [
+            "Search"
+          ]
+        },
+        {
+          "id": "venues",
+          "purpose": "展示缩略图、名称、距离与查看时段入口",
+          "position": "flow",
+          "components": [
+            "Image",
+            "Typography",
+            "Tag",
+            "Button"
+          ],
+          "async": true,
+          "states": {
+            "loading": "显示列表骨架",
+            "empty": "提示没有匹配场馆并提供清空筛选",
+            "failure": "保留检索词并显示重试",
+            "retry": "按当前查询条件重新获取列表"
+          }
+        }
+      ],
+      "layout": {
+        "scroll": "列表自然滚动，图文行左侧连续排列，图片固定尺寸，文字占剩余空间。",
+        "keyboard": "搜索键盘展开时列表仍可滚动。",
+        "safeArea": "底部不固定操作，页面留出安全区。"
+      },
+      "visualDecisions": [
+        {
+          "rule": "L01",
+          "decision": "缩略图示例宽76px，图文间距12px；文本容器flex:1、min-width:0，不使用space-between拉开图文。具体数值随批准token调整。"
+        },
+        {
+          "rule": "L05",
+          "decision": "组件名不出现在用户界面。"
+        }
+      ],
+      "appliedRules": [
+        "G01",
+        "G03",
+        "G04",
+        "G05",
+        "G06",
+        "G07",
+        "G08"
+      ]
+    }
+  ]
+}

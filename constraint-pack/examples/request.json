@@ -1,0 +1,1 @@
+{"prompt":"制作一个文本字数统计小程序，用户输入文本后点击统计，在原页查看结果。","constraints":{"platform":"wechat-miniprogram-native","library":"tdesign-miniprogram","version":"由项目维护人批准并锁定","theme":"沿用项目确认的 TDesign 主题"}}

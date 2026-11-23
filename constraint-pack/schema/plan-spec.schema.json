@@ -1,0 +1,260 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "UI interaction design plan",
+  "type": "object",
+  "required": [
+    "goal",
+    "assumptions",
+    "pages",
+    "unresolved"
+  ],
+  "properties": {
+    "goal": {
+      "type": "string",
+      "minLength": 1
+    },
+    "assumptions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "unresolved": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "pages": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "pattern",
+          "reason",
+          "regions",
+          "layout",
+          "appliedRules",
+          "visualDecisions"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "pattern": {
+            "type": "string",
+            "minLength": 1
+          },
+          "variant": {
+            "type": "string",
+            "minLength": 1
+          },
+          "customReason": {
+            "type": "string",
+            "minLength": 1
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          },
+          "regions": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "purpose",
+                "position",
+                "components"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "purpose": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "position": {
+                  "enum": [
+                    "flow",
+                    "sticky",
+                    "fixed",
+                    "overlay"
+                  ]
+                },
+                "layoutReason": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "components": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "async": {
+                  "type": "boolean"
+                },
+                "submits": {
+                  "type": "boolean"
+                },
+                "states": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "string"
+                  }
+                }
+              },
+              "allOf": [
+                {
+                  "if": {
+                    "properties": {
+                      "position": {
+                        "enum": [
+                          "fixed",
+                          "sticky",
+                          "overlay"
+                        ]
+                      }
+                    }
+                  },
+                  "then": {
+                    "required": [
+                      "layoutReason"
+                    ]
+                  }
+                },
+                {
+                  "if": {
+                    "required": [
+                      "async"
+                    ],
+                    "properties": {
+                      "async": {
+                        "const": true
+                      }
+                    }
+                  },
+                  "then": {
+                    "required": [
+                      "states"
+                    ],
+                    "properties": {
+                      "states": {
+                        "required": [
+                          "loading",
+                          "empty",
+                          "failure",
+                          "retry"
+                        ]
+                      }
+                    }
+                  }
+                },
+                {
+                  "if": {
+                    "required": [
+                      "submits"
+                    ],
+                    "properties": {
+                      "submits": {
+                        "const": true
+                      }
+                    }
+                  },
+                  "then": {
+                    "required": [
+                      "states"
+                    ],
+                    "properties": {
+                      "states": {
+                        "required": [
+                          "submitting",
+                          "success",
+                          "failure",
+                          "unknown"
+                        ]
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "layout": {
+            "type": "object",
+            "required": [
+              "scroll",
+              "keyboard",
+              "safeArea"
+            ],
+            "properties": {
+              "scroll": {
+                "type": "string",
+                "minLength": 1
+              },
+              "keyboard": {
+                "type": "string",
+                "minLength": 1
+              },
+              "safeArea": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "appliedRules": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "enum": [
+                "G01",
+                "G02",
+                "G03",
+                "G04",
+                "G05",
+                "G06",
+                "G07",
+                "G08"
+              ]
+            }
+          },
+          "visualDecisions": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": [
+                "rule",
+                "decision"
+              ],
+              "properties": {
+                "rule": {
+                  "enum": [
+                    "L01",
+                    "L02",
+                    "L03",
+                    "L04",
+                    "L05"
+                  ]
+                },
+                "decision": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

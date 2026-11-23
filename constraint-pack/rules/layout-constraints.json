@@ -1,0 +1,10 @@
+{
+  "source":"项目布局原则，不是TDesign官方像素规范",
+  "rules":[
+    {"id":"L01","appliesTo":"image-text-list","level":"default","requirement":"缩略图固定尺寸，文本区flex:1并允许收缩；图文使用稳定间距，不用space-between把两个区块拉开","example":{"thumbnailWidth":76,"gap":12,"textFlex":"1 1 0%","textMinWidth":0},"verification":"真实窄屏截图检查；示例数值可按项目token调整"},
+    {"id":"L02","appliesTo":"chat-text-bubble","level":"default","requirement":"短句按内容收缩，长句限宽自然换行；不得统一固定宽度或拉伸铺满","example":{"width":"fit-content","maxWidth":"80–84%"},"verification":"短句、长句、长链接各一张真实截图"},
+    {"id":"L03","appliesTo":"all","level":"default","requirement":"相关元素间距小于组间距；减少嵌套卡片，保留一个明确视觉主层级","verification":"人工或视觉模型评审，不能仅靠静态数值判通过"},
+    {"id":"L04","appliesTo":"fixed-controls","level":"required","requirement":"固定操作区不可覆盖正文；键盘与安全区变化有明确处理","verification":"真实页面滚动与键盘展开验证"},
+    {"id":"L05","appliesTo":"all","level":"required","requirement":"技术组件名称、实现注释不混入用户界面；除非业务本身需要展示技术内容","verification":"生成截图及可见文案核对"}
+  ]
+}

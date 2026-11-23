@@ -1,0 +1,32 @@
+PASS Valid SPEC
+PASS Unknown component blocked
+PASS Unknown variant blocked
+PASS Async states blocked
+PASS Submit outcome blocked
+PASS Position reason blocked
+PASS Duplicate page blocked
+PASS Boolean flags blocked
+PASS Unknown rule blocked
+PASS Project required
+PASS Design stage injects all rules
+PASS Design repairs invalid first output
+PASS Design repair limit
+PASS Model exception blocks
+PASS Missing business information remains unresolved
+PASS Real path lookup with synthetic fixture
+PASS Unapproved version blocked
+PASS Native control blocked
+PASS Unknown tag blocked
+PASS Undeclared component blocked
+PASS External template blocked
+PASS Installed component edit changes fingerprint
+PASS Compiled npm output is fingerprinted
+PASS Source edit changes fingerprint
+PASS Valid review signature
+PASS Forged review blocked
+PASS Expired review blocked
+PASS Missing evidence blocked
+PASS Gate blocks without review
+PASS Gate accepts signed fixture review with trusted key
+PASS Gate blocks changed code after review
+31 tests passed. Dependency, review and model fixtures are synthetic; no real API or visual acceptance claimed.

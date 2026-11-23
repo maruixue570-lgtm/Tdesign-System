@@ -1,0 +1,462 @@
+{
+  "library": "tdesign-miniprogram",
+  "status": "Paths must be resolved against installed package before code is accepted; API props are not yet certified",
+  "components": [
+    {
+      "id": "Button",
+      "tag": "t-button",
+      "import": "tdesign-miniprogram/button/button",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/button",
+      "approvedProperties": null
+    },
+    {
+      "id": "Divider",
+      "tag": "t-divider",
+      "import": "tdesign-miniprogram/divider/divider",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/divider",
+      "approvedProperties": null
+    },
+    {
+      "id": "Fab",
+      "tag": "t-fab",
+      "import": "tdesign-miniprogram/fab/fab",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/fab",
+      "approvedProperties": null
+    },
+    {
+      "id": "Icon",
+      "tag": "t-icon",
+      "import": "tdesign-miniprogram/icon/icon",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/icon",
+      "approvedProperties": null
+    },
+    {
+      "id": "Layout",
+      "tag": "t-layout",
+      "import": "tdesign-miniprogram/layout/layout",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/layout",
+      "approvedProperties": null
+    },
+    {
+      "id": "Link",
+      "tag": "t-link",
+      "import": "tdesign-miniprogram/link/link",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/link",
+      "approvedProperties": null
+    },
+    {
+      "id": "Typography",
+      "tag": "t-typography",
+      "import": "tdesign-miniprogram/typography/typography",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/typography",
+      "approvedProperties": null
+    },
+    {
+      "id": "BackTop",
+      "tag": "t-back-top",
+      "import": "tdesign-miniprogram/back-top/back-top",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/back-top",
+      "approvedProperties": null
+    },
+    {
+      "id": "Drawer",
+      "tag": "t-drawer",
+      "import": "tdesign-miniprogram/drawer/drawer",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/drawer",
+      "approvedProperties": null
+    },
+    {
+      "id": "Indexes",
+      "tag": "t-indexes",
+      "import": "tdesign-miniprogram/indexes/indexes",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/indexes",
+      "approvedProperties": null
+    },
+    {
+      "id": "Navbar",
+      "tag": "t-navbar",
+      "import": "tdesign-miniprogram/navbar/navbar",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/navbar",
+      "approvedProperties": null
+    },
+    {
+      "id": "SideBar",
+      "tag": "t-side-bar",
+      "import": "tdesign-miniprogram/side-bar/side-bar",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/side-bar",
+      "approvedProperties": null
+    },
+    {
+      "id": "Steps",
+      "tag": "t-steps",
+      "import": "tdesign-miniprogram/steps/steps",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/steps",
+      "approvedProperties": null
+    },
+    {
+      "id": "TabBar",
+      "tag": "t-tab-bar",
+      "import": "tdesign-miniprogram/tab-bar/tab-bar",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/tab-bar",
+      "approvedProperties": null
+    },
+    {
+      "id": "Tabs",
+      "tag": "t-tabs",
+      "import": "tdesign-miniprogram/tabs/tabs",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/tabs",
+      "approvedProperties": null
+    },
+    {
+      "id": "Calendar",
+      "tag": "t-calendar",
+      "import": "tdesign-miniprogram/calendar/calendar",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/calendar",
+      "approvedProperties": null
+    },
+    {
+      "id": "Cascader",
+      "tag": "t-cascader",
+      "import": "tdesign-miniprogram/cascader/cascader",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/cascader",
+      "approvedProperties": null
+    },
+    {
+      "id": "Checkbox",
+      "tag": "t-checkbox",
+      "import": "tdesign-miniprogram/checkbox/checkbox",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/checkbox",
+      "approvedProperties": null
+    },
+    {
+      "id": "ColorPicker",
+      "tag": "t-color-picker",
+      "import": "tdesign-miniprogram/color-picker/color-picker",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/color-picker",
+      "approvedProperties": null
+    },
+    {
+      "id": "DateTimePicker",
+      "tag": "t-date-time-picker",
+      "import": "tdesign-miniprogram/date-time-picker/date-time-picker",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/date-time-picker",
+      "approvedProperties": null
+    },
+    {
+      "id": "Form",
+      "tag": "t-form",
+      "import": "tdesign-miniprogram/form/form",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/form",
+      "approvedProperties": null
+    },
+    {
+      "id": "Input",
+      "tag": "t-input",
+      "import": "tdesign-miniprogram/input/input",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/input",
+      "approvedProperties": null
+    },
+    {
+      "id": "Picker",
+      "tag": "t-picker",
+      "import": "tdesign-miniprogram/picker/picker",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/picker",
+      "approvedProperties": null
+    },
+    {
+      "id": "Radio",
+      "tag": "t-radio",
+      "import": "tdesign-miniprogram/radio/radio",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/radio",
+      "approvedProperties": null
+    },
+    {
+      "id": "Rate",
+      "tag": "t-rate",
+      "import": "tdesign-miniprogram/rate/rate",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/rate",
+      "approvedProperties": null
+    },
+    {
+      "id": "Search",
+      "tag": "t-search",
+      "import": "tdesign-miniprogram/search/search",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/search",
+      "approvedProperties": null
+    },
+    {
+      "id": "Slider",
+      "tag": "t-slider",
+      "import": "tdesign-miniprogram/slider/slider",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/slider",
+      "approvedProperties": null
+    },
+    {
+      "id": "Stepper",
+      "tag": "t-stepper",
+      "import": "tdesign-miniprogram/stepper/stepper",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/stepper",
+      "approvedProperties": null
+    },
+    {
+      "id": "Switch",
+      "tag": "t-switch",
+      "import": "tdesign-miniprogram/switch/switch",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/switch",
+      "approvedProperties": null
+    },
+    {
+      "id": "Textarea",
+      "tag": "t-textarea",
+      "import": "tdesign-miniprogram/textarea/textarea",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/textarea",
+      "approvedProperties": null
+    },
+    {
+      "id": "TreeSelect",
+      "tag": "t-tree-select",
+      "import": "tdesign-miniprogram/tree-select/tree-select",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/tree-select",
+      "approvedProperties": null
+    },
+    {
+      "id": "Upload",
+      "tag": "t-upload",
+      "import": "tdesign-miniprogram/upload/upload",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/upload",
+      "approvedProperties": null
+    },
+    {
+      "id": "Avatar",
+      "tag": "t-avatar",
+      "import": "tdesign-miniprogram/avatar/avatar",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/avatar",
+      "approvedProperties": null
+    },
+    {
+      "id": "Badge",
+      "tag": "t-badge",
+      "import": "tdesign-miniprogram/badge/badge",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/badge",
+      "approvedProperties": null
+    },
+    {
+      "id": "Cell",
+      "tag": "t-cell",
+      "import": "tdesign-miniprogram/cell/cell",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/cell",
+      "approvedProperties": null
+    },
+    {
+      "id": "Collapse",
+      "tag": "t-collapse",
+      "import": "tdesign-miniprogram/collapse/collapse",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/collapse",
+      "approvedProperties": null
+    },
+    {
+      "id": "CountDown",
+      "tag": "t-count-down",
+      "import": "tdesign-miniprogram/count-down/count-down",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/count-down",
+      "approvedProperties": null
+    },
+    {
+      "id": "Empty",
+      "tag": "t-empty",
+      "import": "tdesign-miniprogram/empty/empty",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/empty",
+      "approvedProperties": null
+    },
+    {
+      "id": "Footer",
+      "tag": "t-footer",
+      "import": "tdesign-miniprogram/footer/footer",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/footer",
+      "approvedProperties": null
+    },
+    {
+      "id": "Grid",
+      "tag": "t-grid",
+      "import": "tdesign-miniprogram/grid/grid",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/grid",
+      "approvedProperties": null
+    },
+    {
+      "id": "Image",
+      "tag": "t-image",
+      "import": "tdesign-miniprogram/image/image",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/image",
+      "approvedProperties": null
+    },
+    {
+      "id": "ImageViewer",
+      "tag": "t-image-viewer",
+      "import": "tdesign-miniprogram/image-viewer/image-viewer",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/image-viewer",
+      "approvedProperties": null
+    },
+    {
+      "id": "Progress",
+      "tag": "t-progress",
+      "import": "tdesign-miniprogram/progress/progress",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/progress",
+      "approvedProperties": null
+    },
+    {
+      "id": "QRCode",
+      "tag": "t-qrcode",
+      "import": "tdesign-miniprogram/qrcode/qrcode",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/qrcode",
+      "approvedProperties": null
+    },
+    {
+      "id": "Result",
+      "tag": "t-result",
+      "import": "tdesign-miniprogram/result/result",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/result",
+      "approvedProperties": null
+    },
+    {
+      "id": "Segmented",
+      "tag": "t-segmented",
+      "import": "tdesign-miniprogram/segmented/segmented",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/segmented",
+      "approvedProperties": null
+    },
+    {
+      "id": "Skeleton",
+      "tag": "t-skeleton",
+      "import": "tdesign-miniprogram/skeleton/skeleton",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/skeleton",
+      "approvedProperties": null
+    },
+    {
+      "id": "Sticky",
+      "tag": "t-sticky",
+      "import": "tdesign-miniprogram/sticky/sticky",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/sticky",
+      "approvedProperties": null
+    },
+    {
+      "id": "Swiper",
+      "tag": "t-swiper",
+      "import": "tdesign-miniprogram/swiper/swiper",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/swiper",
+      "approvedProperties": null
+    },
+    {
+      "id": "Table",
+      "tag": "t-table",
+      "import": "tdesign-miniprogram/table/table",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/table",
+      "approvedProperties": null
+    },
+    {
+      "id": "Tag",
+      "tag": "t-tag",
+      "import": "tdesign-miniprogram/tag/tag",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/tag",
+      "approvedProperties": null
+    },
+    {
+      "id": "Watermark",
+      "tag": "t-watermark",
+      "import": "tdesign-miniprogram/watermark/watermark",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/watermark",
+      "approvedProperties": null
+    },
+    {
+      "id": "ActionSheet",
+      "tag": "t-action-sheet",
+      "import": "tdesign-miniprogram/action-sheet/action-sheet",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/action-sheet",
+      "approvedProperties": null
+    },
+    {
+      "id": "Dialog",
+      "tag": "t-dialog",
+      "import": "tdesign-miniprogram/dialog/dialog",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/dialog",
+      "approvedProperties": null
+    },
+    {
+      "id": "DropdownMenu",
+      "tag": "t-dropdown-menu",
+      "import": "tdesign-miniprogram/dropdown-menu/dropdown-menu",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/dropdown-menu",
+      "approvedProperties": null
+    },
+    {
+      "id": "Guide",
+      "tag": "t-guide",
+      "import": "tdesign-miniprogram/guide/guide",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/guide",
+      "approvedProperties": null
+    },
+    {
+      "id": "Loading",
+      "tag": "t-loading",
+      "import": "tdesign-miniprogram/loading/loading",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/loading",
+      "approvedProperties": null
+    },
+    {
+      "id": "Message",
+      "tag": "t-message",
+      "import": "tdesign-miniprogram/message/message",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/message",
+      "approvedProperties": null
+    },
+    {
+      "id": "NoticeBar",
+      "tag": "t-notice-bar",
+      "import": "tdesign-miniprogram/notice-bar/notice-bar",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/notice-bar",
+      "approvedProperties": null
+    },
+    {
+      "id": "Overlay",
+      "tag": "t-overlay",
+      "import": "tdesign-miniprogram/overlay/overlay",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/overlay",
+      "approvedProperties": null
+    },
+    {
+      "id": "Popover",
+      "tag": "t-popover",
+      "import": "tdesign-miniprogram/popover/popover",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/popover",
+      "approvedProperties": null
+    },
+    {
+      "id": "Popup",
+      "tag": "t-popup",
+      "import": "tdesign-miniprogram/popup/popup",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/popup",
+      "approvedProperties": null
+    },
+    {
+      "id": "PullDownRefresh",
+      "tag": "t-pull-down-refresh",
+      "import": "tdesign-miniprogram/pull-down-refresh/pull-down-refresh",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/pull-down-refresh",
+      "approvedProperties": null
+    },
+    {
+      "id": "SwipeCell",
+      "tag": "t-swipe-cell",
+      "import": "tdesign-miniprogram/swipe-cell/swipe-cell",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/swipe-cell",
+      "approvedProperties": null
+    },
+    {
+      "id": "Toast",
+      "tag": "t-toast",
+      "import": "tdesign-miniprogram/toast/toast",
+      "doc": "https://tdesign.tencent.com/miniprogram/components/toast",
+      "approvedProperties": null
+    }
+  ],
+  "businessComponents": []
+}

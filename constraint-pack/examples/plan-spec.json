@@ -1,0 +1,68 @@
+{
+  "goal": "制作一个文本字数统计工具，输入后主动统计，在当前页展示结果。",
+  "assumptions": [
+    "仅在本地统计文本，不上传内容",
+    "本示例只证明设计结构，不代表已接入模型或通过真实渲染验收"
+  ],
+  "unresolved": [],
+  "pages": [
+    {
+      "id": "pages/counter/index",
+      "pattern": "tool",
+      "variant": "点击处理",
+      "reason": "用户完成输入后主动执行，结果简短，适合原页展示。",
+      "regions": [
+        {
+          "id": "input",
+          "purpose": "填写待统计文本",
+          "position": "flow",
+          "components": [
+            "Textarea"
+          ]
+        },
+        {
+          "id": "execute",
+          "purpose": "明确触发统计",
+          "position": "flow",
+          "components": [
+            "Button"
+          ]
+        },
+        {
+          "id": "result",
+          "purpose": "展示字数及复制结果入口",
+          "position": "flow",
+          "components": [
+            "Typography",
+            "Button"
+          ]
+        }
+      ],
+      "layout": {
+        "scroll": "页面自然滚动，输入与结果分组",
+        "keyboard": "编辑时允许滚动至当前输入位置，提交后按需收起键盘",
+        "safeArea": "不固定底栏，页面底部预留安全区"
+      },
+      "appliedRules": [
+        "G01",
+        "G02",
+        "G03",
+        "G04",
+        "G05",
+        "G06",
+        "G07",
+        "G08"
+      ],
+      "visualDecisions": [
+        {
+          "rule": "L03",
+          "decision": "文本输入与结果以分组留白区分，不给每个文本字段再套卡片。"
+        },
+        {
+          "rule": "L05",
+          "decision": "界面只显示业务文案，组件名、状态字段和实现注释留在设计文档。"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "version": "1.1.0",
+  "platform": "wechat-miniprogram-native",
+  "package": "tdesign-miniprogram",
+  "allowedNativeTags": [
+    "view",
+    "text",
+    "scroll-view",
+    "image",
+    "block",
+    "template",
+    "slot",
+    "rich-text",
+    "navigator"
+  ],
+  "forbiddenNativeAlternatives": [
+    "button",
+    "input",
+    "textarea",
+    "switch",
+    "slider",
+    "checkbox",
+    "radio",
+    "picker"
+  ],
+  "requireInstalledDependency": true,
+  "requireExactProjectVersion": true,
+  "strictUnknownTags": true,
+  "unverifiedComponentAPI": "manual_review",
+  "unverifiedVisualRules": "manual_review",
+  "ruleOverride": "requires_project_owner_change",
+  "maxRepairAttempts": 3,
+  "approvedVersions": [],
+  "reviewMaxAgeHours": 168,
+  "reviewSignature": "Ed25519",
+  "configurationStatus": "maintainer_must_approve_actual_dependency_version"
+}
